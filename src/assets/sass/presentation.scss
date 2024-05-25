@@ -1,0 +1,82 @@
+@use 'partials/variables' as var;
+
+.presentation__container{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        align-self: center;
+        padding-bottom: 0;
+    }
+
+    .roughnotation{
+        align-self: center;
+        font-size: 1.8rem;
+        font-weight: 300;
+        height: fit-content;
+        padding: .4rem 1rem;
+        width: fit-content;
+    }
+
+    section{
+        border-bottom: .1rem solid var.$color-black;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 4rem 0;
+
+        h3{
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5;
+            padding: 2rem 1rem 1rem 1rem;
+            width: fit-content;
+        }
+
+        p{
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 1;
+            line-height: 1.5;
+            padding: .5rem 1rem;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            list-style: none;
+            padding: 2rem 0;
+
+            li{
+                display: flex;
+                flex-direction: column;
+                font-size: 1.1rem;
+                gap: 1rem;
+                letter-spacing: 1;
+                padding: 0 2rem;
+
+                h4{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+                h5{
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }            
+
+                p{
+                    background-color: var.$color-black;
+                    border-radius: .4rem;
+                    color: var.$color-white;
+                    font-weight: 400;
+                }
+
+                figure img{
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

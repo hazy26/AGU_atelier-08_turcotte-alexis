@@ -1,0 +1,22 @@
+@use 'partials/variables' as var;
+
+footer{
+    background-color: var.$color-black;
+    padding: 4rem;
+    width: 100%;
+
+    .copyright{
+        align-items: center;
+        color: var.$color-white;
+        display: flex;
+        flex-direction: column;
+        font-weight: 200;
+        gap: 1rem;
+        letter-spacing: 1;
+
+        span{
+            color: var.$color-black;
+            font-weight: 400;
+        }
+    }
+}
