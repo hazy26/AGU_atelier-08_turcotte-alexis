@@ -584,7 +584,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"aitAD":[function(require,module,exports) {
-var _roughNotation = require("rough-notation");
+/*        
+            Importation de rough-notation 
+*/ var _roughNotation = require("rough-notation");
 /*        
             Box Notations 
 */ const boxes = document.querySelectorAll(".box");
@@ -683,6 +685,16 @@ underlines.forEach((underline)=>{
         animationDuration: 2000
     });
     annotation.show();
+});
+const menuBtn = document.querySelector(".menu__icon");
+const menu = document.querySelector("nav");
+function toggleMenu() {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("moveFromLeft");
+    document.body.classList.toggle("remove-scroll");
+}
+menuBtn.addEventListener("click", ()=>{
+    toggleMenu();
 });
 
 },{"rough-notation":"cWSh6"}],"cWSh6":[function(require,module,exports) {

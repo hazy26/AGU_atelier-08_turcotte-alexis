@@ -1,3 +1,8 @@
+
+/*        
+            Importation de rough-notation 
+*/
+
 import { annotate } from "rough-notation";
 
 /*        
@@ -5,11 +10,13 @@ import { annotate } from "rough-notation";
 */
 const boxes = document.querySelectorAll('.box');
 boxes.forEach(box => {
+    
     const annotation = annotate(box, { 
         type: 'box', 
         color: '#4C956C', 
         iterations: 1, 
         strokeWidth: 3});
+
     annotation.show();
 });
 
@@ -105,4 +112,18 @@ underlines.forEach(underline => {
         iterations: 3, 
         animationDuration: 2000});
     annotation.show();
+});
+
+
+const menuBtn = document.querySelector('.menu__icon');
+const menu = document.querySelector('nav');
+
+function toggleMenu(){
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('moveFromLeft');
+    document.body.classList.toggle('remove-scroll');
+}
+
+menuBtn.addEventListener('click', () => {
+    toggleMenu();
 });

@@ -10,96 +10,116 @@
 </head>
 <body>
     <header>
-        <nav>
-            <i>
-                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FEFEE3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
-            </i>
-            <ul class="hidden menu__container">
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Cameleon</a></li>
+        <h1><a href="https://roughnotation.com/" target="_blank">RoughNotation</a></h1>
+        <i class="menu__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FEFEE3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+        </i>
+        <nav class="hidden">
+            <ul>
+                <li><a href="#origine">Origine</a></li>
+                <li><a href="#fonctionnement">Fonctionnement</a></li>
+                <li><a href="#exempleCode">Exemple de code</a></li>
+                <li><a href="#obstacles">Obstacles rencontrés</a></li>
+                <li><a href="#pointsforts">Points forts</a></li>
+                <li><a href="#pointsameliorer">Points à amèliorer</a></li>
+                <li><a href="#opinion">Mon opinion</a></li>
+                <li><a href="#atelier07">Atelier 07 - Exemple</a></li>
             </ul>
         </nav>
-        <h1><a href="https://roughnotation.com/" target="_blank">RoughNotation</a></h1>
     </header>
     <main>
         <section class="presentation__container">
             <h2>Présentation de la <span class="highlight">librairie:</span></h2>
             <h3 class="underline roughnotation">Rough Notation</h3>
             <section>
-                <h3><span class="circle">Origine</span></h3>
+                <h3 id="origine"><span class="circle">Origine</span></h3>
                 <p>Créée par Karthik Nambiar, elle est conçue pour ajouter des annotations visuelles sur les pages web, en utilisant un style dessiné à la main, semblable à celui de la librairie "RoughJS", dont elle s'inspire.</p>
                 <p>L'idée derrière Rough Notation est de rendre les annotations sur le web plus attrayantes et distinctives par rapport aux styles typiques et formels. L'utilisation de ces annotations peut être particulièrement efficace dans les contextes éducatifs, les présentations ou toute autre situation où l'accentuation visuelle est cruciale.</p>
                 <p>Karthik Nambiar a annoncé et partagé cette librairie via son compte Twitter et la communauté de développeurs a rapidement adopté l'outil grâce à sa simplicité et son style unique.</p>
             </section>
 
             <section>
-                <h3><span class="box">Fonctionnement</span></h3>
+                <h3 id="fonctionnement"><span class="box">Fonctionnement</span></h3>
+                <a class="documentation" target="_blank" href="https://github.com/rough-stuff/rough-notation">Documentation supplémentaire ici</a>
             </section>
 
             <section>
-                <h3><span class="bracket">Exemple de code</span></h3>
+                <h3 id="exempleCode"><span class="bracket">Exemple de code</span></h3>
+                <figure>
+                    <img src="./assets/img/exemple_code.png" alt="Image d'un exemple de code.">
+                </figure>
+                <a class="documentation" target="_blank" href="https://github.com/rough-stuff/rough-notation">Documentation supplémentaire ici</a>
             </section>
 
             <section>
-                <h3>Un <span class="highlight crossed-off">obstacle</span> rencontré</h3>
+                <h3 id="obstacles"><span class="highlight crossed-off">Obstacles</span> rencontrés</h3>
+                <p>Le highlight multi-line. Devoir écrire type=module.</p>
+                <a class="documentation" target="_blank" href="https://github.com/rough-stuff/rough-notation">Documentation supplémentaire ici</a>
             </section>
 
             <section>
-                <h3>Points <span class="bracket">forts</span></h3>
+                <h3 id="pointsforts">Points <span class="bracket">forts</span></h3>
                 <ul>
                     <li>
-                        <h4>Diverses façon de l'intégrer</h4>
+                        <h4><span class="circle">1.</span> <span class="underline">Diverses façon de l'intégrer</span></h4>
                         <ul>
                             <li>
-                                <h5>1. Ajout via npm</h5>
+                                <h5><span class="highlight">a.</span> Ajout via npm</h5>
                                 <p>npm install --save-dev rough-notation</p>
                             </li>
                             <li>
-                                <h5>2. Charger le module ES directement</h5>
+                                <h5><span class="highlight">b.</span> Charger le module ES</h5>
+                                <p>&lt;script type='module' src='https://unpkg.com/rough-notation?module'&gt;&lt;/script&gt;</p>
                             </li>
                             <li>
-                                <h5>3. Ajout par IIFE (Immediately Invoked Function Expression) directement dans le scope désiré</h5>
+                                <h5><span class="highlight">c.</span> Ajout par IIFE (Immediately Invoked Function Expression) directement dans le scope désiré</h5>
+                                <p>&lt;script src='https://unpkg.com/rough-notation/lib/rough-notation.iife.js'&gt;&lt;/script&gt;</p>
+                                <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <h4>Facile d'utilisation</h4>
+                        <h4><span class="circle">2. </span><span class="underline">Facile d'utilisation</span></h4>
                     </li>
                     <li>
-                        <h4>Personnalisable</h4>
+                        <h4><span class="circle">3. </span> <span class="underline">Personnalisable</span></h4>
                         <figure>
                             <img src="./assets/img/edit.png" alt="Image de documentation sur RoughNotation.">
                         </figure>
-                    </li>
-                    
+                    </li> 
                 </ul>
+                <a class="documentation"  target="_blank" href="https://github.com/rough-stuff/rough-notation">Documentation supplémentaire ici</a>
             </section>
 
             <section>
-                <h3>Points <span class="bracket">à améliorer</span></h3>
+                <h3 id="pointsameliorer">Points <span class="bracket">à améliorer</span></h3>
                 <ul>
                     <li>
-                        <h4>1. Davantage de documentation et support</h4>
+                        <h4><span class="circle">1. </span> Plus de documentation et support</h4>
                     </li>
                     <li>
-                        <h4>2. Encore plus de personnalisation</h4>
+                        <h4><span class="circle">2. </span> Encore plus de personnalisation</h4>
                     </li>
                 </ul>
+                <a class="documentation" target="_blank" href="https://github.com/rough-stuff/rough-notation">Documentation supplémentaire ici</a>
             </section>
 
             <section>
-                <h3>Mon opinion sur cette librairie</h3>
-                <p>Mon opinion est pas mal dans la même direction que les points forts et 
+                <h3 id="opinion"><span class="circle">Mon opinion</span> sur cette librairie</h3>
+                <p>
+                    Mon opinion est pas mal dans la même direction que celle des points forts et 
                     les points à améliorer mentionnés plus haut. 
                     Je trouve que Rough Notation peu s'avérer très pratique dans divers 
                     contextes de mise en valeur d'un élément, ou simplement pour 
                     ajouter un visuel agréable à une page web. La librairie est très facile 
                     d'utilisation et peu de temps son nécessaire afin de savoir comment s'en servir. 
-                    La personnalisation est déjà bien, mais pourrais être pousser davantage.</p>
+                    La personnalisation est déjà bien, mais pourrais être pousser davantage.
+                </p>
+                <a class="documentation" target="_blank" href="https://github.com/rough-stuff/rough-notation">Documentation supplémentaire ici</a>
             </section>
         </section>
         <section class="cameleon__container">
-            <h2 class="atelier">Atelier 07 - <span class="underline">Exemple d'utilisation</span></h2>
+            <h2 class="atelier" id="atelier07">Atelier 07 - <span class="underline">Exemple d'utilisation</span></h2>
             <h2><span class="highlight">Le Caméléon</span> : Maître dans l'Art du <span class="strike">Camouflage</span></h2>
             <figure>
                 <img src="https://www.alefadago.com/wp-content/uploads/2020/11/cameleon-de-madagascar.jpg" alt="Image d'un caméléon.">
