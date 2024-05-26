@@ -281,12 +281,6 @@ body main {
   box-shadow: 0 0 8px 2px #0006;
 }
 
-@media screen and (width >= 1024px) {
-  body main {
-    padding: 4rem;
-  }
-}
-
 body .hidden {
   display: none;
 }
