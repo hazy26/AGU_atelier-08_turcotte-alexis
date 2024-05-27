@@ -686,16 +686,23 @@ underlines.forEach((underline)=>{
     });
     annotation.show();
 });
+/* 
+            Toggle Menu Function
+*/ const dialogs = document.querySelectorAll(".dialog");
 const menuBtn = document.querySelector(".menu__icon");
-const menu = document.querySelector("nav");
-function toggleMenu() {
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("moveFromLeft");
+dialogs.forEach((dialog)=>{
+    dialog.addEventListener("click", ()=>{
+        toggleDialogs();
+    });
+});
+menuBtn.addEventListener("click", ()=>{
+    toggleDialogs();
+});
+function toggleDialogs() {
+    const dialog = document.querySelector(".dialog");
+    dialog.classList.toggle("hidden");
     document.body.classList.toggle("remove-scroll");
 }
-menuBtn.addEventListener("click", ()=>{
-    toggleMenu();
-});
 
 },{"rough-notation":"cWSh6"}],"cWSh6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
