@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 4rem 0 6rem 0;
 
     h2{
         color: var.$color-black;
@@ -16,7 +15,7 @@
     .atelier{
         font-size: 2.5rem;
         font-weight: 400;
-        padding: 2rem 0 4rem 0;
+        padding-bottom: 4rem;
     }
 
     figure{
@@ -36,7 +35,7 @@
         h3{
             color: var.$color-black;
             font-size: 1.6rem;
-            padding: 2rem 0 .5rem 0;
+            padding: 2rem 0 1rem 0;
         }
     }
 }

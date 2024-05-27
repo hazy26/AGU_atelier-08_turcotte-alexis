@@ -1,12 +1,231 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+header {
+  z-index: 100;
+  background-color: #112a1c;
+  justify-content: space-between;
+  width: 100dvw;
+  padding: .5rem 1rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header h1 a {
+  color: #fefee3;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  text-decoration: underline;
+}
+
+header i {
+  z-index: 200;
+}
+
+header i svg {
+  cursor: pointer;
+  transition: all .3s;
+  transform: scale(.96);
+}
+
+header i svg:hover {
+  transform: rotate(90deg)scale(1);
+}
+
+header i svg:active {
+  transform: rotate(180deg)scale(.8);
+}
+
+header nav {
+  z-index: 150;
+  background-color: #0009;
+  width: 100dvw;
+  height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header nav ul {
+  background-color: #ffc9b9;
+  flex-direction: column;
+  padding-top: 2rem;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  border-bottom: .2rem solid #fefee3;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+header nav ul li a {
+  color: #112a1c;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+header nav ul li a:hover, header nav ul li a:active {
+  text-decoration: underline;
+}
+
+.presentation__container {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+.presentation__container h2 {
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+.presentation__container .roughnotation {
+  letter-spacing: 1px;
+  width: fit-content;
+  padding-bottom: 4rem;
+  font-size: 1.8rem;
+}
+
+.presentation__container section {
+  border-bottom: .1rem solid #112a1c;
+  flex-direction: column;
+  padding: 2rem 0 6rem;
+  display: flex;
+}
+
+.presentation__container section h3 {
+  letter-spacing: 1.2px;
+  padding: 0 0 1rem .2rem;
+  font-size: 1.6rem;
+}
+
+.presentation__container section p {
+  padding: .5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
 .presentation__container section figure img {
   width: 100%;
   max-width: 100%;
+  padding: 1rem 0;
+}
+
+.presentation__container section ul {
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem .5rem;
+  list-style: none;
+  display: flex;
+}
+
+.presentation__container section ul li {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+.presentation__container section ul li h4 {
+  letter-spacing: .5px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.presentation__container section ul li ul li {
+  padding: 1rem 0;
+}
+
+.presentation__container section ul li ul li h5 {
+  letter-spacing: .5px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.presentation__container section ul li ul li p {
+  color: #ffc9b9;
+  letter-spacing: .5px;
+  background-color: #112a1c;
+  border-radius: .6rem;
+  padding: .5rem 1rem;
+  font-size: .95rem;
+}
+
+.presentation__container section ul li .utilisation {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  display: flex;
+}
+
+.presentation__container section ul li .utilisation span {
+  width: fit-content;
+  padding: .5rem;
+}
+
+.presentation__container section a.documentation {
+  color: #112a1c;
+  letter-spacing: .5px;
+  text-align: center;
+  background-color: #ffc9b9;
+  border: .12rem solid #112a1c;
+  border-radius: .4rem;
+  width: fit-content;
+  margin-top: 2rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: all .3s;
+  box-shadow: 4px 4px #112a1c;
+}
+
+.presentation__container section a.documentation:hover {
+  transform: scale(.96);
+  box-shadow: 3px 3px #112a1c;
+}
+
+.presentation__container section a.documentation:active {
+  transform: scale(.92);
+  box-shadow: 2px 2px #112a1c;
+}
+
+.presentation__container #fonctionnement p {
+  padding: 0;
+}
+
+.presentation__container #fonctionnement p + a {
+  color: #112a1c;
+  letter-spacing: .5px;
+  background-color: #ffc9b9;
+  border: .12rem solid #112a1c;
+  border-radius: .4rem;
+  width: fit-content;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all .2s;
+  box-shadow: 4px 4px #112a1c;
+}
+
+.presentation__container #fonctionnement p + a:hover {
+  transform: scale(.96);
+  box-shadow: 3px 3px #112a1c;
+}
+
+.presentation__container #fonctionnement p + a:active {
+  transform: scale(.92);
+  box-shadow: 2px 2px #112a1c;
 }
 
 .cameleon__container {
   flex-direction: column;
   gap: 1rem;
-  padding: 4rem 0 6rem;
   display: flex;
 }
 
@@ -16,7 +235,7 @@
 }
 
 .cameleon__container .atelier {
-  padding: 2rem 0 4rem;
+  padding-bottom: 4rem;
   font-size: 2.5rem;
   font-weight: 400;
 }
@@ -34,7 +253,7 @@
 
 .cameleon__container section h3 {
   color: #112a1c;
-  padding: 2rem 0 .5rem;
+  padding: 2rem 0 1rem;
   font-size: 1.6rem;
 }
 
@@ -43,7 +262,8 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 2rem 1rem;
+  width: 100dvw;
+  padding: 4rem 1rem;
   display: flex;
 }
 
@@ -53,7 +273,7 @@ footer .highlight {
 
 footer p {
   color: #fefee3;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -66,8 +286,35 @@ footer p {
 
 :root {
   scroll-behavior: smooth;
-  scroll-padding-top: 8rem;
+  scroll-padding-top: 4rem;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
+}
+
+body {
+  background-color: #8fbea3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+body main {
+  background-color: #fefee3;
+  flex-direction: column;
+  gap: 6rem;
+  max-width: 1024px;
+  padding: 8rem 2rem;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 6px 1px #0006;
+}
+
+@media screen and (width >= 1024px) {
+  body main {
+    padding: 8rem 4rem;
+  }
 }
 
 body .hidden {
